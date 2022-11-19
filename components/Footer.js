@@ -1,11 +1,12 @@
-import React from 'react'
+import axios from 'axios'
+import React, { useEffect, useState } from 'react'
+
+
 
 const Footer = () => {
+
     return (
         <div className = 'min-h-[300px] flex flex-col items-center  p-4 mt-10 pb-10 bg-gradient-to-bl from-blue-600 via-indigo-700 to-violet-900 text-white'>
-            <div className = 'pt-6 text-center text-2xl font-bold sm:text-3xl md:text-4xl'>
-                Contact me
-            </div>
             <div className = 'flex w-full max-w-2xl pl-10 pr-10 p-3 '>
                 <input 
                     placeholder = 'Title'
