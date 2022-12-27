@@ -1,39 +1,40 @@
 import React from 'react'
 import Project from './Project'
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const projects = [
     {
         title: 'e-commerce website',
         description: 'Lorem ipsum dolor sit amet lorem, one or more of the more projects indexed',
-        imgUrl: 'https://www.vapulus.com/en/wp-content/uploads/2021/01/facebook_shop.jpg',
+        imgUrl: 'https://cdn.dribbble.com/userupload/4160523/file/original-6121b534db6b0a42070fe0b9a979f0f2.png?compress=1&resize=1200x900',
         codeUrl: '#',
         deploymentUrl: '#',
     },
     {
         title: 'booking app',
         description: 'Lorem ipsum dolor sit amet lorem, one or more of the more projects indexed',
-        imgUrl: 'https://www.vapulus.com/en/wp-content/uploads/2021/01/facebook_shop.jpg',
+        imgUrl: 'https://cdn.dribbble.com/users/25514/screenshots/13914075/media/93d0ecdd88dad80b5915d2fe4541e77c.png?compress=1&resize=1000x750&vertical=top',
         codeUrl: '#',
         deploymentUrl: '#',
     },
     {
         title: 'news app',
         description: 'Lorem ipsum dolor sit amet lorem, one or more of the more projects indexed',
-        imgUrl: 'https://www.vapulus.com/en/wp-content/uploads/2021/01/facebook_shop.jpg',
+        imgUrl: 'https://cdn.dribbble.com/users/1814344/screenshots/11578809/media/a74e755ec0e1b236a6bc1648ee755070.png?compress=1&resize=1000x750&vertical=top',
         codeUrl: '#',
         deploymentUrl: '#',
     },
     {
         title: 'weather app',
         description: 'Lorem ipsum dolor sit amet lorem, one or more of the more projects indexed',
-        imgUrl: 'https://www.vapulus.com/en/wp-content/uploads/2021/01/facebook_shop.jpg',
+        imgUrl: 'https://cdn.dribbble.com/users/835462/screenshots/14952937/kvartet_video_tomas_skarba_platform.png?compress=1&resize=400x300&vertical=top',
         codeUrl: '#',
         deploymentUrl: '#',
     },
     {
         title: 'note taking app',
         description: 'Lorem ipsum dolor sit amet lorem, one or more of the more projects indexed',
-        imgUrl: 'https://www.vapulus.com/en/wp-content/uploads/2021/01/facebook_shop.jpg',
+        imgUrl: 'https://cdn.dribbble.com/users/4859/screenshots/14609945/media/b361cb59a174d13466b0dfbf072f020f.png?compress=1&resize=400x300&vertical=top',
         codeUrl: '#',
         deploymentUrl: '#',
     },
@@ -41,12 +42,13 @@ const projects = [
 
 const ProjectsSection = () => {
     return (
-        <div className = 'pt-10 ml-5 mr-5 sm:ml-10 sm:mr-10 flex flex-col items-center'>
+        <div className = 'pt-10 ml-5 mr-5 sm:ml-10 sm:mr-10 flex flex-col items-center '>
+            <ScrollAnimation animateIn = 'fadeInUp' animateOnce = {true}>
             <div className = 'max-width-of-page'>
-                <div className = 'text-2xl sm:text-3xl p-2 text-cente'>
+                <div className = 'text-2xl sm:text-5xl p-2 text-center font-bold text-gray-300'>
                     Some Things I've Built
                 </div>
-                <div>
+                <div className = 'flex flex-wrap mt-6'>
                     {
                         projects.map((project, index) => {
                             return (
@@ -58,6 +60,7 @@ const ProjectsSection = () => {
                     }
                 </div>
             </div>
+            </ScrollAnimation>
         </div>
     )
 }

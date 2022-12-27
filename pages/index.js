@@ -10,9 +10,8 @@ import ProjectsSection from '../components/ProjectsSection'
 import SkillsSection from '../components/SkillsSection'
 
 export default function Home() {
-    const [date, setDate] = useState()
     return (
-        <div className = ''>
+        <div className = 'bg-gray-900'>
             {/* <Header /> */}
             <FirstSection />
             <AboutSection />
