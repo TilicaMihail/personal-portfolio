@@ -44,7 +44,7 @@ const ProjectsSection = () => {
     const [projects, setProjects] = useState(allProjects)
     return (
         <div className = 'pt-10 ml-5 mr-5 sm:ml-10 sm:mr-10 flex flex-col items-center'>
-            <ScrollAnimation animateIn = 'fadeInUp' animateOnce = {true}>
+            <ScrollAnimation animateIn = 'fadeInUp' animateOnce = {true} >
             <div className = 'max-width-of-page'>
                 <div className = 'text-2xl sm:text-5xl p-2 text-center font-bold text-gray-300'>
                     Some Things I've Built

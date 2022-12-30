@@ -16,7 +16,7 @@ const FirstSection = () => {
                 </div>
             </div>  */}
             <div className = 'p-10 flex-wrap flex items-center justify-around flex-col sm:flex-row w-full' >
-                <ScrollAnimation animateIn="fadeInLeft" duration = {2} animateOnce = {true}>
+                <ScrollAnimation animateIn="fadeInLeft" duration = {2} animateOnce = {true} >
                     <div className = 'max-w-xl md:mb-2 mb-10'>
                         <div className = 'text-gray-400'>
                             Hi, I am
@@ -40,7 +40,7 @@ const FirstSection = () => {
                         </Link>
                     </div>
                 </ScrollAnimation>
-                <ScrollAnimation animateIn="fadeIn" duration = {6} animateOnce = {true}>
+                <ScrollAnimation animateIn="fadeIn" duration = {6} animateOnce = {true} >
                     <div><img src = '/mthethird_web_developer_coding_illustration_cafdc54e-2dfa-4e9c-b56f-1a64d26f84d2_prev_ui.png' alt = '' /></div>
                 </ScrollAnimation>
             </div>

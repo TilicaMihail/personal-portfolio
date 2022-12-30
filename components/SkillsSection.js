@@ -5,7 +5,7 @@ const SkillsSection = () => {
 
     return (
         <div className = 'p-5 flex flex-col items-center justify-center w-full mt-5 pb-32 '>
-            <ScrollAnimation animateIn = "fadeInUp" animateOnce = {true}>
+            <ScrollAnimation animateIn = "fadeInUp" animateOnce = {true}  >
                 <div className = 'bg-slate-800 p-10 rounded-xl  shadow-xl text-gray-200'>
                     <div className = 'text-2xl sm:text-5xl p-2 text-center font-bold  '>
                         Technologies I use
