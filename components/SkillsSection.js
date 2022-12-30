@@ -12,10 +12,10 @@ const SkillsSection = () => {
                     </div>
                     <div className = 'flex items-center justify-center flex-wrap m-10 gap-3'>
                         <div className = 'p-3 border rounded-lg  font-bold'>
-                            React
+                            Figma
                         </div>
                         <div className = 'p-3 border rounded-lg  font-bold'>
-                            Next
+                            Next js
                         </div>
 
                         <div className = 'p-3 border rounded-lg  font-bold'>

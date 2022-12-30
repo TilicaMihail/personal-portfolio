@@ -11,7 +11,10 @@ import SkillsSection from '../components/SkillsSection'
 
 export default function Home() {
     return (
-        <div className = 'bg-gray-900'>
+        <div className = 'bg-gray-900 relative'>
+            {/* <div className = 'bg-orange-300 h-96 w-96 absolute z-1 bottom-0 right-0 rounded-l-[200%]  -translate-y-[100px]'>
+
+            </div> */}
             {/* <Header /> */}
             <FirstSection />
             <AboutSection />

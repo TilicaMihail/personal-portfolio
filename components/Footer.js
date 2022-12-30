@@ -1,29 +1,28 @@
 import axios from 'axios'
-import React, { useEffect, useState } from 'react'
-
-
+import Link from 'next/link'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 const Footer = () => {
 
-    return (
-        <div className = 'min-h-[300px] flex flex-col items-center  p-4 mt-10 pb-10 bg-gradient-to-bl from-blue-600 via-indigo-700 to-violet-900 text-white'>
-            <div className = 'flex w-full max-w-2xl pl-10 pr-10 p-3 '>
-                <input 
-                    placeholder = 'Title'
-                    className = 'grow bg-transparent outline-none border-2 rounded-xl p-2 text-lg' 
-                />
-            </div>
-            <div className = 'flex w-full max-w-2xl pl-10 pr-10 p-3 '>
-                <textarea 
-                    placeholder = 'Tell me your idea'
-                    className = ' min-h-[200px] grow bg-transparent outline-none border-2 rounded-xl p-2 text-lg' 
-                />
-            </div>
-            <div className = 'flex w-full max-w-2xl pl-10 pr-10 p-3'>
-                <button className = 'bg-glass text-xl font-bold w-full p-3 transition duration-100 hover:-translate-y-1 hover:opacity-90'>
-                    Contact me
-                </button>
-            </div>
+    return (     
+        <div className = 'flex flex-col items-center mt-20 p-10 text-white bg-gray-700 rounded-md bg-opacity-20 p-20'>
+            <ScrollAnimation animateIn="fadeIn" duration = {2} animateOnce = {true}>
+                <div className = 'text-3xl md:text-5xl font-bold text-center'>
+                    Interested in collaborating for a project?
+                </div>
+            </ScrollAnimation>
+            <ScrollAnimation animateIn="fadeIn" duration = {2} animateOnce = {true}>
+                <div className = 'p-2 text-lg text-center'>
+                    I'm always open to discussing new opportunities. Send me your thoughts and we'll take it from there.
+                </div>
+                </ScrollAnimation>
+            <ScrollAnimation animateIn="fadeIn" duration = {2} animateOnce = {true}>
+                <Link href = 'mailto:mihailtilica1@gmail.com'>
+                    <button className = ' mt-12 p-5 text-xl font-bold border-2 rounded text-orange-300 border-orange-300 hover-button text-sm'>
+                        Start a project together
+                    </button>  
+                </Link>
+            </ScrollAnimation>
         </div>
     )
 }
