@@ -47,7 +47,7 @@ const ProjectsSection = () => {
             <ScrollAnimation animateIn = 'fadeInUp' animateOnce = {true} >
             <div className = 'max-width-of-page'>
                 <div className = 'text-2xl sm:text-5xl p-2 text-center font-bold text-gray-300'>
-                    Some Things I've Built
+                    Some Things I&apos;ve Built
                 </div>
                 <div className = 'flex flex-wrap mt-6'>
                     {

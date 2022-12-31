@@ -28,7 +28,7 @@ const FirstSection = () => {
                             Fullstack Developer and Designer
                         </div>
                         <div className = ' text-gray-400 text-sm'>
-                        I love building websites and web applications, and I am always looking to learn and stay up-to-date on the latest technologies and best practices. Feel free to take a look at my portfolio to see some of my past work and don't hesitate to reach out if you have any questions or want to work together on a project.
+                        I love building websites and web applications, and I am always looking to learn and stay up-to-date on the latest technologies and best practices. Feel free to take a look at my portfolio to see some of my past work and don&apos;t hesitate to reach out if you have any questions or want to work together on a project.
                         </div>
                         <button className = ' mt-5 p-3  border rounded text-white border hover-button text-sm'>
                             My CV

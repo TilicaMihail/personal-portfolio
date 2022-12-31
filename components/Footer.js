@@ -13,7 +13,7 @@ const Footer = () => {
             </ScrollAnimation>
             <ScrollAnimation animateIn="fadeIn" duration = {2} animateOnce = {true} >
                 <div className = 'p-2 text-lg text-center'>
-                    I'm always open to discussing new opportunities. Send me your thoughts and we'll take it from there.
+                    I&apos;m always open to discussing new opportunities. Send me your thoughts and we&apos;ll take it from there.
                 </div>
                 </ScrollAnimation>
             <ScrollAnimation animateIn="fadeIn" duration = {2} animateOnce = {true} >
