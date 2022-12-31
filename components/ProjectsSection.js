@@ -1,6 +1,8 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Project from './Project'
 import ScrollAnimation from 'react-animate-on-scroll';
+import { db } from '../firebase-config'
+import { collection, query, getDocs} from "firebase/firestore";
 
 const allProjects = [
     {
@@ -41,7 +43,22 @@ const allProjects = [
 ]
 
 const ProjectsSection = () => {
-    const [projects, setProjects] = useState(allProjects)
+    const [projects, setProjects] = useState([])
+
+    useEffect(() => {
+        const fetchProjects = async () => {
+            if(projects.length !== 0) return
+            const q = query(collection(db, "projects"));
+            const querySnapshot = await getDocs(q);
+            setProjects([])
+            querySnapshot.forEach(async (doc) => {
+                //console.log(doc.data())
+                setProjects(p => [...p, doc.data()]) 
+            });
+        }
+        fetchProjects();
+    }, [])
+
     return (
         <div className = 'pt-10 ml-5 mr-5 sm:ml-10 sm:mr-10 flex flex-col items-center'>
             <ScrollAnimation animateIn = 'fadeInUp' animateOnce = {true} >
