@@ -21,7 +21,7 @@ const Footer = () => {
                     <button className = ' mt-12 p-5 text-xl font-bold border-2 rounded text-orange-300 border-orange-300 hover-button text-sm'>
                         Start a project together
                     </button>  
-                </Link>
+                </Link> 
             </ScrollAnimation>
         </div>
     )
