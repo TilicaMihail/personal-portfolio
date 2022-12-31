@@ -25,7 +25,7 @@ const Project = ({ project }) => {
     //     </div>
     // )
     return (
-        <div className = 'overflow-hidden m-3 shadow-lg rounded-xl flex flex-col items-center justify-center bg-slate-800 text-gray-300 hover-card'>
+        <div className = 'overflow-hidden m-3 shadow-lg rounded-xl flex flex-col items-center justify-center bg-slate-800 text-gray-300'>
             <div className = 'grow'>
                 <img src = {project?.imgUrl} alt = '' className = 'rounded max-h-[250px] aspect-video' />              
             </div>
